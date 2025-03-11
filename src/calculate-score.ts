@@ -8,10 +8,10 @@ export function calculateScore(serializedScore: string): number {
     strikes = Math.max(0, strikes - 1);
     if (attempt === "X") {
       total = total + 10;
-      strikes = strikes + 2;
+      strikes = 2;
     } else if (attempt === "/") {
       total = total + 10;
-      spares = spares + 1;
+      spares = 1;
     } else if (attempt === "-") {
       continue;
     } else {
